@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seller page</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="img"><a href="../../index.html"><img src="../../images/logo.png" alt=""></a></div>
+        <div class="btn_navbar">
+            <a href="../customer/customer.html"><button class="button">Customer</button></a>
+            <a href="#"><button class="button">seller</button></a>
+        </div>
+    </nav>
+    <div id="seller_view" style="display: block;" >
+        <div id="product_view">
+            <button  id="click_add" class="button" >Add product</button>
+              <div id="product_container" ></div>
+        </div>
+    </div>
+
+    <div id="dialog_product"  style="display: none;" >
+      <dialog open>
+          <header id="dialog_header"></header>
+  
+          <section>
+            <label>Product </label>
+            <input id="nameOf_animal" type="text" placeholder="animal name" />
+            <label>Retail news</label>
+            <input id="url" type="url" placeholder="image" />
+            <input id="description" type="text" placeholder="Description of image" />
+            <input id="cost" type="number" min="1" placeholder="Cost" />
+            <select id="currency" placeholder="Currency" >
+              <option value="$">$</option>
+              <option value="៛">៛</option>
+            </select>
+          </section>
+          <menu  class="btn_menu">
+            <button class="button" id="click_concel" >Cancel</button>
+            <button class="button" id="add">create</button>
+            <button class="button" id="edit" >Edit</button>
+          </menu>
+    </dialog>
+</body>
+<script type="module" src="seller.js"></script>
+</html>

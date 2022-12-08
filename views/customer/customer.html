@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer page</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body >
+    <div id="container" >
+        <nav >
+            <div class="img"> <a href="../../index.html"><img src="../../images/logo.png" alt=""></a></div>
+            <div class="btn_navbar">
+                <a href="#"><button class="button">Customer</button></a>
+                <a href="../seller/seller.html"><button class="button">seller</button></a>
+            </div>
+        </nav>
+        <div class="contain_customerpage" >
+            <div id="contain_search">
+                <form action="" class="search_animal">
+                    <input type="text" placeholder="Search name animal..."  class="user_input" />
+                    <img src="../../images/searchIcon.png" alt="" >
+                </form>
+                <img src="../../images/cart.png" alt="" id="cart" >
+            </div>
+            
+    
+            <div class="card_product">
+                <div id="nocard" style = "display: none"></div>
+                <div class="new_product">
+                    <h2>New Pet</h2>
+                    <div class="all_card"  id = "contain_new_product">
+                    </div>
+                </div>
+                <div class="old_product">
+                        <h2>Old pet</h2>
+                        <div class="all_card" id = "contain_old_product" ></div>
+                </div>
+            </div>
+        </div>
+    
+        <div id="dialog_product"  style="display: none;" >
+            <dialog open id="detail_dialog">
+                <header id="dialog_header">Detail News </header>
+                <div class="dialog_card">
+                    <img src="../../images/cat.jpg" alt="" id="detail_img">
+                    <div class="dialog_news">
+                        <p>Name: <span id="detail_name"></span></p>
+                        <p>Description: <span id="detail_description"></span></p>
+                        <p>Cost: <span id="detail_cost"></span></p>
+                        <button class="button" id="btn_add_cart">Add Cart</button>
+                        <button class="button back1" >Back</button>
+                    </div>
+                </div>
+            
+            </dialog>
+        </div>
+    </div>
+    <div class="cart_show"  style="display: none;" >
+        <div id="cart_dialog">
+            <header id="dialog_header">Your Cart</header>
+            <menu>
+                <button class="button back2" >Back</button>
+                <button class="button  payment_btn" >Payment</button>
+            </menu>
+            <table id="table"> </table>
+        
+        </div>
+    </div> 
+    <div class="payment"  style="display:none">
+        <div class="container_total">
+            
+            <div id="payment_dialog">
+                <h2>Payment</h2>
+                <p>Accepted Cards</p>
+                <div class="card_pay">
+                    <img src="../../images/aba.png" alt="">
+                    <img src="../../images/visalcard.png" alt="">
+                    <img src="../../images/suat.png" alt="">
+                    <img src="../../images/rhb.png" alt="">
+                </div>
+                <label for="cname">Name on Card</label>
+                <input type="text" id="cname" name="cardname" placeholder="Write your name here!">
+                <label for="ccnum">Credit card number</label>
+                <input type="text" id="ccnum" name="cardnumber" placeholder="****-****-****-****">
+                <label for="expmonth">Exp Month</label>
+                <input type="text" id="expmonth" name="expmonth" placeholder="December">
+                <div class="row">
+                    <div class="col">
+                      <label for="expyear">Exp Year</label>
+                      <input type="text" id="expyear" name="expyear" placeholder="Year*">
+                    </div>
+                    <div class="col">
+                      <label for="cvv">CVV</label>
+                      <input type="text" id="cvv" name="cvv" placeholder="***">
+                    </div>
+                  </div>
+                  <button class="button checkout" >Continue to check out</button>
+    
+            
+            </div>
+            <div class="total"></div>
+        </div>
+    </div>
+      
+</body>
+<script type="module"  src="./customer.js"></script>
+</html>
